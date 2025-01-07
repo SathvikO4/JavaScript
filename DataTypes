@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a=1
+        // console.log("hi+a");
+        // document.write('hi+  a+a',"<br>")
+
+        // console.log(`hi+${a}`)
+        // document.write(`hi+${a}`,"<br>")
+
+        // console.log("hi+ "+a)
+        // document.write("hi+"+a,"<br>")
+
+        // let x="sai"
+        // let y="kumar"
+        // let z =30
+        // console.log(`Iam ${x+y} , my age is ${z} years old`)
+        // document.write(`Iam ${x+y} , my age is ${z} years old`,"<br>")
+
+        //let a= "React js"
+        //let b= " Student"
+        //let c= "Sai"
+        //let d= " kumar"
+        //document.write(`${a} ${b} = ${c} ${d}`)
+
+        //let a=null
+        //document.write(a,"<br>")
+        //document.write(typeof(a))
+
+        let e
+        document.write(typeof(e))
+    </script>
+</body>
+</html>
