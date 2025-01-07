@@ -1,0 +1,36 @@
+Variables:
+They are used to store any kind of data i.e. no data type is required
+	1. Case sensitive
+	2. Start with letters , _, $
+	3. Can't start with numbers
+	4. Reserved words (Keywords) are not allowed
+
+	 Reassigning variables  is possible by var   ex: var a=5;                  a=10;
+	 Reassigning variables  is possible by let
+	 Reassigning variables  is not possible by const
+
+	J Redeclaring is accepted by accepted by var  ex: var a=5;                  var a=10;
+	J Redeclaring is not accepted by accepted by let
+Redeclaring is not accepted by accepted by char
+
+//global
+var a=10;
+console.log(a);
+
+//local
+let b=20;
+console.log(b);
+
+const c=30;
+console.log(c);
+
+{
+    var m=40;
+    console.log(m);
+
+    let n=50;
+    console.log(n);
+
+    const o=60;
+    console.log(o);
+}
