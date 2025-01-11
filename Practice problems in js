@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+        let n=prompt("Enter a number: ")
+        switch(true){
+            case n>0:
+            document.write("Number is positive")
+            break;
+            case n<0:
+            document.write("Number is negative")
+            break;
+            case n==0:
+            document.write("Number is zero")
+            break;
+            default:
+            document.write("Invalid input")
+        }
+        let a = prompt("Enter the day with all small letters: ");
+        switch (a) {
+            case "monday":
+            case "tuesday":
+            case "wednesday":
+            case "thursday":
+            case "friday":
+                document.write(`${a} is a week day`);
+                break;
+            case "saturday":
+            case "sunday":
+                document.write(`${a} is a weekend`);
+                break;
+            default:
+                document.write("Invalid input");
+        }
+        
+        let a = parseInt(prompt("Enter the number of units: "), 10);
+
+        if (a > 0) {
+            let totalBill = 0;
+
+            if (a <= 50) {
+                totalBill = a * 2;
+            } else if (a <= 150) {
+                totalBill = (50 * 2) + ((a - 50) * 3);
+            } else if (a <= 250) {
+                totalBill = (50 * 2) + (100 * 3) + ((a - 150) * 5);
+            } else {
+                totalBill = (50 * 2) + (100 * 3) + (100 * 5) + ((a - 250) * 8);
+            }
+            totalBill += totalBill * 0.2;
+
+            document.write("Total Bill: " + totalBill);
+        } else {
+            alert("Invalid input");
+        }
+
+        let a=parseInt(prompt("Enter the number of students:"))
+        let b= a*(a-1)/2
+        document.write("Total number of handshakes are: "+b)
+        
+
+        
+        let a=parseInt(prompt("Enter the range: "))
+        let f1=0, f2=1;
+        document.write("Fibonacci series: ");
+        for(let i=1;i<=a;i++){
+            document.write(`${f1} `)
+            let temp=f1+f2;
+            f1=f2;
+            f2=temp;
+        }
+        
+
+        let a=parseInt(prompt("Enter a number: "))
+        let isPrime= true;
+        for(let i=2;i<=a;i++){
+            if(a % i === 0){
+                isPrime=false;
+                break;
+            }
+        }
+        if(isPrime){
+            document.write("Prime number")
+            }else{
+                document.write("Not a prime number")
+                }
+        **/
+
+        let a =parseInt(prompt("Enter a number: "))
+        let b= parseInt(a.toString().split('').reverse().join(''))
+        if(a===b){
+            document.write("Palindrome")
+            }else{
+                document.write("Not a palindrome")
+                }
+                
+    </script>
+</body>
+</html>
