@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+        function greet(){
+            document.write("Hello Sathvik")
+        }
+        greet()
+        document.write("<br>")
+        document.write("Hi Rishi")
+        
+        function g(name){
+            document.write("Hello "+name)
+        }
+        let name= prompt("Enter your name: ")
+        g(name)
+        
+        function add(aa,bb){
+            return aa+bb;
+        }
+        let a=parseInt(prompt("Enter a number: "))
+        let b=parseInt(prompt("Enter another number: "))
+        let sum=add(a,b)
+        document.write("The sum of ",a," and ",b," is ",sum)
+        **/
+    </script>
+</body>
+</html>
+
+
+
+
+
+Functions : is a reusable block of code 
+== it can be called anywhere in the program
+== reusable code is where we use the existing code without writing it everytime
+== we can use the same code with different arguments with different results
+== def (function name)  // used in python
+== in JS :
+	   key word = function
+	   ()
+	   parameters = values which are declared in the () while defining a function 
+
+== arguments : which are used to pass the values or values which are passed through the parameters
+
+Function return : 
+		the return statement can be used to return the value to function call
+EX :
+ 	function a(aa,bb){
+	return aa+bb;
+	}
+	let n1 = parsefloat(prompt("Enter num1 : ")
+	let n2 = parsefloat(prompt("Enter num2 : ")
+	let result = a(n1,n2)
+	console.log("The sum is: "+result)
+
+
+Anonymous function : a function without name , after we create a function without name and we assign it to a variable
+
+EX : 
+	sum = function(n1,n2){
+	let r = n1+n2
+	return r
+	}
+	console.log(sum(20,3))
