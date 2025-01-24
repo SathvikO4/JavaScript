@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+        //arrow function with out parameyters
+        let c=()=>{
+            document.write("Sathvik")
+        }
+        c()
+        
+        // arrow function with one argument
+        let x=(a,b)=>{
+            document.write(a+b)
+        }
+        x(20,30)
+        x(30,40)
+        
+        //arrow function with out areguments
+        let greet=x=>{
+            document.write(x)
+        }
+            greet("Sathvik")
+            
+            //areeow function with out parameter
+            let greet =()=>document.write("Sathvik")
+            greet()
+            
+
+            //arrow function as an expression
+            let age=18;
+            let welcome=(age<18)?
+            ()=>document.write("Hello"):
+            ()=>document.write("Sathvik")
+            welcome()
+
+            function task1(){
+                document.write( "task1 : start <br>")
+            }
+            function task2(){
+                document.write( "task2 : start <br>")
+            }
+            function task3(){
+                document.write( "task3 : start <br>")
+            }
+            task1()
+            task2()
+            task3()
+            
+
+            document.write("hi Rishi", "<br>");
+            setTimeout(()=>{
+                document.write("bye good night")
+            },5000)
+            document.write("i am sleeping")
+            **/
+
+
+            //javascript callback function
+            
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+//CallBack Function
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+        function greet(name,callback){
+            document.write("Hello "+name+"<br>")
+            callback()
+        }
+        function bye(){
+            document.write("Good Bye")
+        }
+        greet("Sathvik",bye)
+        **/
+
+        let myPromise=new Promise((resolve,reject)=>{
+            let success=true;
+            if (success){
+                resolve("task completed")
+            }else{
+                reject("task failed")
+            }
+        })
+        
+
+    </script>
+</body>
+</html>
