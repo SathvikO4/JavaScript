@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+        function greet(name,callback){
+            document.write(Hello, ${name}! <br>);
+            callback();
+        }
+        function sayGoodbye(){
+            document.write('Goodbye!');
+        }
+        greet("Rishi",sayGoodbye)
+        
+        let myPromise=new Promise((resolve,reject)=>{
+            let success=true;
+            if(success){
+                resolve("Hello, Sathvik!");
+            }else{
+                reject("Something went wrong");
+            }
+        })
+        Promise()
+        
+        function mainfunction(callback){
+            document.write("This is the main function <br>");
+            callback();
+        }
+        function callbackfunction(){
+            document.write("This is the callback function <br>");
+        }
+        mainfunction(callbackfunction);
+        
+        function greet(name,callback){
+            document.write(`Hello, ${name}! <br>`);
+            callback();
+        }
+        function sayGoodbye(){
+            document.write('Goodbye!');
+        }
+        greet("Rishi",sayGoodbye)
+        
+        // Using an anonymous function as a callback
+        function greet(name,callback){
+            document.write(`Hello, ${name}! <br>`);
+            callback();
+        }
+        greet("Rishi",function(){
+            document.write('Good morning!');
+        })
+        
+        //Asynchronous Callback with setTImer
+        function fetchData(callback){
+            document.write("Fetching data from the server... <br>");
+            setTimeout(function(){
+                document.write("Data fetched successfully!<br>");
+                callback()
+            },2000);
+        }
+        function processData(){
+            document.write("Processing the fetched data... <br>");
+        }
+        fetchData(processData);
+        
+        //Asynchronous Callback with array methods(map)
+        const numbers=[1,2,3,4,5];
+        const doubled=numbers.map(function(number){
+            return number*2;
+        });
+        document.write(doubled);
+        **/
+        // User registration scenario
+        function registerUser(username,callback){
+            document.write(`Registering user: ${username} <br>`);
+            setTimeout(function(){
+                document.write(`User: ${username} registered successfully! `);
+                callback();
+            },3000);
+            }
+            function sendEmail(email){
+                document.write("Sending welcome email to the user.."+email);
+            }
+            registerUser('Sathvik','dsathvik204@gmail.com',sendEmail);
+    </script>
+</body>
+</html>
