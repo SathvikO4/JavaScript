@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+        let promise=new Promise((resolve,reject)=>{
+            let success=false;
+            if(success){
+                resolve("The operation is successful... Enjoy")
+            }else{
+                reject("The operation is a failure... Endhuka ra neeku")
+            }
+        })
+        promise.then((message)=>{
+            document.write(message)
+        }).catch((message)=>{
+            document.write(message)
+        })
+        
+        //Chaining of promises
+        let promise1=new Promise((resolve,reject)=>{
+            resolve(5);
+        })
+        promise1.then(result=>{
+            document.write(result+"<br>")
+            return result*2;
+        })
+        .then(result=>{
+            document.write(result+"<br>")
+            return result+3;
+        })
+        .then(result=>{
+            document.write(result+"<br>")
+        })
+        .catch(error=>{
+            document.write("error:"+error)
+        })
+        
+        //Promise with setTimeout
+        let promise=new Promise((resolve,reject)=>{
+            resolve("The operation is successful... Enjoy")
+        })
+        .then(result=>{
+            document.write("Congratulations!")
+            setTimeout(()=>{
+                document.write("Success")
+            },3000)
+        })
+        .catch(error=>{
+            document.write("error:"+error)
+        })
+        **/
+    </script>
+</body>
+</html>
