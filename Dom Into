@@ -1,0 +1,71 @@
+DOM( Document Object Model)
+It is used in web development used to interact and manipulate(change) the html documents.
+
+When the webpage is loaded, the browser created DOM of the webpage
+When the html file is loaded into the browser, the javascript directly cannot understand the html document directly
+
+DOM: It is basically the representation of the same html element but in a tree like structure composed of object
+Key points:
+	1) Structure: It is a tree like structure of HTML document as a tree. Each node in a tree represents an element, an attribute or text
+	2) Manipulation: Using javascript, you can interact with elements( buttons, paragraphs) on the webpage, changing the content, styles, can add or remove elements.
+	3) Event Handling: You can handle the interactions like click or pressing the button
+	4) W3C (World Wide Web Consortium) 
+
+Dom: Document is the entry point of the DOM
+
+
+
+
+<html>
+    <head>
+        <title>MRU</title>
+    </head>
+    <body>
+        <h1>I am in HYD</h1>
+    </body>
+</html>
+
+Method of Document Objects:
+Used to interact with and manipulate the document.
+Getting element:
+	1) Getting an element by id
+	2) Getting an element by class
+	3) Getting an element by tag
+Getting an element by query selector
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi</title>
+    <style>
+        .a{
+            color: red;
+        }
+        .b{
+            color: blue;
+        }
+        .c{
+             color: green;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <h1 id="a">My first heading</h1>
+        <h1 id="b">My second heading</h1>
+        <h1 id="c">My third heading</h1>
+        <h1 id="b">My fourth heading</h1>
+        <h1 id="c">My fifth heading</h1>
+        <h1 id="a">My sixth heading</h1>
+    </body>
+    <script>
+        let a = document.getElementById("a");
+        document.write(a.innerHTML);
+    </script>
+</body>
+</html>
