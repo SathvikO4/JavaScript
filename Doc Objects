@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="a" class="a">Iam </h1>
+    <h1 id="b" class="b">Sai</h1>
+    <h1 id="c" class="a">Sathvik</h1>
+
+    <h1 class="a"> Good Morning!!</h1> -->
+    <script>
+        /**
+        let x=document.getElementById('a');
+        document.write(x.innerHTML);
+        
+        let a=document.getElementsByClassName('a');
+        console.log(a)
+        
+        let x=document.querySelector('h1');
+        console.log(x);
+        for(let i=0;i<x.length;i++){
+            console.log(x[i]);
+        }
+       
+        let x=document.querySelectorAll('h1');
+        console.log(x);
+         
+         let t=document.createElement('h2');
+         t.className="tt"
+         t.textContent="Iam Sai Sathvik";
+         document.body.appendChild(t);
+        **/
+        const t=['Sathvik','Rishitha','Hansika']
+        for(let i=0;i<t.length;i++){
+            let x=document.createElement('h1');
+            x.className="a";
+            x.textContent=t[i];
+            console.log(x);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+getElementById(): return the element having the given id value. Targets a single HTML element
+Ex:
+
+<h1 id="a">Iam </h1>
+    <h1 id="b">Sai</h1>
+    <h1 id="c">Sathvik</h1>
+    <script>
+        let x=document.getElementById('a');
+        document.write(x.innerHTML);
+    </script>
+
+
+getElementByClassName(): returns all the elements having the same class name
+It return an html collection object.
+An HTML Collection is an array like list of Html elements.
+The lenght property provides the size of collection
+	
+	<h1 id="a" class="a">Iam </h1>
+	    <h1 id="b" class="b">Sai</h1>
+	    <h1 id="c" class="a">Sathvik</h1>
+	    <h1 class="a"> Good Morning!!</h1>
+	    <script>
+	                let a=document.getElementsByClassName('a');
+	        console.log(a)
+		</script>
+		
+Getting elements by Tagname:
+getElementsByTagName(): 
+This method takes a tag name as string and returns an HTML Collection object.
+
+
+<h1 id="a" class="a">Iam </h1>
+    <h1 id="b" class="b">Sai</h1>
+    <h1 id="c" class="a">Sathvik</h1>
+    <h1 class="a"> Good Morning!!</h1>
+    <script>
+        /**
+        let x=document.getElementById('a');
+        document.write(x.innerHTML);
+        
+        let a=document.getElementsByClassName('a');
+        console.log(a)
+        **/
+        let x=document.getElementsByTagName('h1');
+        console.log(x);
+        for(let i=0;i<x.length;i++){
+            console.log(x[i]);
+        }
+    </script>
+
+Getting elements by using query Selector methods:
+The document query selector method select an HTML elements by tag name, by id, class name
+Query Selector: Can be used to select HTML element by its tag name, by id, class name, it only selects the first element 
+
+
+<h1 id="a" class="a">Iam </h1>
+    <h1 id="b" class="b">Sai</h1>
+    <h1 id="c" class="a">Sathvik</h1>
+    <h1 class="a"> Good Morning!!</h1>
+    <script>
+        let x=document.querySelector('h1');
+        console.log(x);
+        for(let i=0;i<x.length;i++){
+            console.log(x[i]);
+        }
+    </script>
+
+QueryselectorAll: It selects all the html elements by its class name and tag name
+
+Manipulating Elements: 
+To create HTML elements:
+createElement()- create a new element   document.createElement()
+
+
+textContent:
+Single element:
+To create multiple elements:
