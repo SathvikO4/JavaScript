@@ -1,0 +1,94 @@
+textContent:
+Single element
+Multiple element
+
+//creating multiple elements
+Ex 1:
+Const titles=["Sathvik","Rishi","Hansi"]
+For(let i=0;i<titles.length; i++){
+Let title=document.creatElement('h1');
+Title.className="a"
+Title.textContext=titles[i]
+Console.log(title)
+}
+
+Ex 2:
+Let title;
+For(let i=0;i<3;i++){
+Title=document.creatElement('h2')
+Title.className="tt"
+Title.textContent=i
+Console.log(title)
+} 
+
+
+To append a new element:
+Append()-- To append a new element to parent node
+
+	<div id="a">
+        <h1>Sathvik</h1>
+        <h1>Rishitha</h1>
+    </div>
+    <div id="b">
+        <h1>Hansika</h1>
+        <h1>Preetam</h1>
+    </div>
+
+
+	   let n=document.createElement('h2');
+        n.textContent="Sai";
+        //get the parent element
+        let p= document.getElementById('a');
+        //append the new element to the parent element
+        p.appendChild(n);
+        console.log(p.innerText);
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <ul>
+        <li>Sathvik</li>
+        <li>Ram</li>
+        <li>Preetam</li>
+    </ul> -->
+
+    <div id="a">
+        <h1>Sathvik</h1>
+        <h1>Rishitha</h1>
+    </div>
+
+    <div id="b">
+        <h1>Hansika</h1>
+        <h1>Preetam</h1>
+    </div>
+    <script>
+        /**
+        const ul = document.querySelector('ul');
+        const lists = document.querySelector('li');
+        for(const list of lists){
+            console.log(`Removing: ${list.textContent}`);
+            ul.removeChild(list);
+            console.log(lists);
+        }
+        **/
+        let n=document.createElement('h2');
+        n.textContent="Sai";
+        //get the parent element
+        let p= document.getElementById('a');
+        console.log(a.innerText);
+        //append the new element to the parent element
+        p.appendChild(n);
+        console.log(p.innerText);
+    </script>
+</body>
+</html>
